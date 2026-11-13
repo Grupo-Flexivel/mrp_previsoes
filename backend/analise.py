@@ -31,7 +31,7 @@ necessidade = pd.read_csv(diretorio_script / "Necessidade-por-Data-e-componente-
 
 estoque_produtos.columns = estoque_produtos.columns.str.strip() #remove espaços em branco do nome das colunas
 necessidade.columns = necessidade.columns.str.strip()
-codigo_produto_piloto = 103060001 #103130002 
+codigo_produto_piloto = 103070006 #103130002 
 lead_time_meses = 2
 
 codigos_estoque = pd.to_numeric(estoque_produtos.iloc[:, 0], errors="coerce") #.iloc[linha, coluna]
