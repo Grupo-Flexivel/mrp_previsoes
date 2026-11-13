@@ -1,0 +1,19 @@
+header{
+    display: flex;
+    margin: 0;
+    width: 100vw;
+    height: 10vh;
+    background-color: green;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header-container{
+    h1{
+        font-family: "Inter", sans-serif;
+        font-size: 25px;
+        color: rgb(126, 255, 126);
+        margin: 0;
+    }
+}

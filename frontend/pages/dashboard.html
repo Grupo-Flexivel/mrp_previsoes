@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/dashboard.css">
+    <script src="../scripts/layout.js"></script>
+    <title>Dashboard - Ponto de Ruptura</title>
+</head>
+<body>
+    <div id="header"></div>
+
+    <main>
+        <div class="boxes-container">
+            <div id="box-1" class="box">
+                <span><img id="caixa-img" src="../assets/box.png" alt="icone caixa"></span>
+                <div class="mini-container-texto">
+                    <div class="titulo">
+                        <h1>PRODUTOS CADASTRADOS</h1>
+                    </div>
+                    <div class="informacoes"><h2>33</h2><p>itens no planejamento</p></div>
+                </div>
+            </div>
+
+            <div id="box-2" class="box">
+                <span><img id="alerta-img" src="../assets/warning.png" alt="icone alerta"></span>
+                <div class="mini-container-texto">
+                    <div class="titulo">
+                        <h1>ALERTAS DE COMPRA</h1>
+                    </div>
+                    <div class="informacoes"><h2>10</h2><p>itens requerem atenção</p></div>
+                </div>
+            </div>
+
+            <div id="box-3" class="box">
+                <h1>LOCALIZAR PRODUTOS</h1>
+
+                <label for="filtro-produtos">Filtre por código ou descrição</label>
+                <span><img src="../assets/search.png" alt="icone pesquisa">
+                <input id="filtro-produtos" type="text" placeholder="Código ou descrição">
+                </span>
+
+            </div>
+        </div>
+
+        <div class="tabela-container">
+            <table class="tabela">
+                <thead class="cabecalho-tabela">
+                    <tr>
+                        <th>PRODUTO</th>
+                        <th>INDICADORES</th>
+                        <th>MÊS ATUAL</th>
+                        <th>MÊS 1</th>
+                        <th>MÊS 2</th>
+                        <th>MÊS 3</th>
+                        <th>RUPTURA</th>
+                    </tr>
+                </thead>
+
+                <tbody class="corpo-tabela">
+                    <!-- 1 PRODUTO A -->
+                    <tr>
+                        <td rowspan="3">103080005 - ORTEGOL 501 - IND - IMP - TB 180 KG</td>
+                        <td>Estoque inicial previsto</td>
+                        <td>4458.47</td>
+                        <td>4121.018</td>
+                        <td>3783.559</td>
+                        <td>2978.071</td>
+                        <td rowspan="3">Sem ruptura nos quatro períodos</td>
+                    </tr>
+
+                    <tr>
+                        <td>Demanda prevista</td>
+                        <td>337.454</td>
+                        <td>337.459</td>
+                        <td>805.488</td>
+                        <td>723.822</td>
+                    </tr>
+
+                    <tr>
+                        <td>Estoque a caminho</td>
+                        <td>0.000</td>
+                        <td>0.000</td>
+                        <td>0.000</td>
+                        <td>0.000</td>
+                    </tr>
+
+                    <!-- 2 PRODUTO B -->
+                    <tr>
+                        <td rowspan="3">103130002 - CLORETO DE BENZOILA - IND - NAC - TB 240 KG</td>
+                        <td>Estoque inicial previsto</td>
+                        <td>240.540</td>
+                        <td>171.939</td>
+                        <td>103.583</td>
+                        <td>50.131</td>
+                        <td rowspan="3">Ruptura do mês 2 pra mês 3</td>
+
+                    </tr>
+
+                    <tr>
+                        <td>Demanda prevista</td>
+                        <td>68.601</td>
+                        <td>68.356</td>
+                        <td>53.452</td>
+                        <td>52.277</td>
+                    </tr>
+
+                    <tr>
+                        <td>Estoque a caminho</td>
+                        <td>0.000</td>
+                        <td>0.000</td>
+                        <td>0.000</td>
+                        <td>0.000</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <div class="paginacao" role="navigation" aria-label="Paginação da tabela">
+                <button type="button" aria-label="Página anterior">&lsaquo;</button> <!-- &lsaquo; == < -->
+                <button type="button" class="pag-ativa" aria-current="page">1</button>
+                <button type="button">2</button>
+                <button type="button">3</button>
+                <button type="button" aria-label="Próxima página">&rsaquo;</button> <!-- &rsaquo; == > -->
+            </div>
+        </div>
+    </main>
+    
+    <div id="footer"></div>
+
+</body>
+</html>
