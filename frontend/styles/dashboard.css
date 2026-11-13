@@ -8,6 +8,7 @@ body{
     margin: 0;
     display: flex;
     flex-direction: column;
+    font-family: "Inter", sans-serif;
 }
 
 main{
@@ -118,6 +119,7 @@ main{
         outline: none;
         width: 80%;
         height: 28px;
+        font-family: inherit;
     }
 }
 
@@ -181,6 +183,7 @@ main{
     cursor: pointer;
     font-size: 11px;
     font-weight: bold;
+    font-family: inherit;
 
     &:hover{
         border-color: #a9c5a5;

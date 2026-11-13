@@ -60,3 +60,6 @@ O código atual serve como referência do protótipo e não representa a arquite
 
 ## Execução
 Ainda não há comandos de instalação ou execução para a stack final: a configuração do projeto Node.js, do frontend React e da conexão com o PostgreSQL está pendente.
+
+## Link do protótipo figma
+https://www.figma.com/make/ApXdy0eOAeoWHiJd6r4rEc/Dashboard-de-Previs%C3%B5es-MRP?p=f&t=RIx5b35PIKK4CPDk-0
